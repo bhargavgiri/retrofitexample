@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
         
         OwnerDetailService ownerDetailService=ApiClient.getOwnerDetails();
-        Call<VehicleRootModel> call=ownerDetailService.getVehicleData("GJ04BB8898");
+        Call<VehicleRootModel> call=ownerDetailService.getVehicleData("GJ S6631");
         call.enqueue(new Callback<VehicleRootModel>() {
             @Override
             public void onResponse(Call<VehicleRootModel> call, Response<VehicleRootModel> response) {
